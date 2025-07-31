@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Phan Hoang Phuc - IT Student</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-section">
+                <img src="/assets/profile.png" alt="Tran Phan Hoang Phuc" class="profile-image">
+                <h1 class="name">Tran Phan Hoang Phuc</h1>
+                <p class="title">Information Technology Student</p>
+            </div>
+            
+            <div class="intro">
+                Final year IT student passionate about technology and currently learning DevOps. 
+                Experience with web development, databases, and version control. 
+                Always eager to learn new technologies and take on challenging projects.
+            </div>
+            
+            <p class="location">Based in Ho Chi Minh City, Vietnam</p>
+            
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="#" onclick="showSection('about')">About</a>
+                <a href="#" onclick="showSection('skills')">Skills</a>
+                <a href="#" onclick="showSection('projects')">Projects</a>
+                <a href="#" onclick="showSection('contact')">Contact</a>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>
+                I'm currently in my final year studying Information Technology at RMIT University. 
+                My journey in tech has been driven by curiosity and a desire to build things that matter.
+            </p>
+            <p>
+                Recently, I've been diving into DevOps practices and learning about tools like Apache Tomcat. 
+                I enjoy the intersection of development and operations, and I'm fascinated by how modern 
+                deployment pipelines can streamline software delivery.
+            </p>
+            <p>
+                When I'm not coding, I'm usually exploring new technologies, working on personal projects, 
+                or collaborating with teammates on university assignments.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Backend & Database</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>RESTful APIs</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Tools & DevOps</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VSCode</li>
+                        <li>Apache Tomcat</li>
+                        <li>Command Line</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Currently Learning</h3>
+                    <ul>
+                        <li>DevOps Practices</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Cloud Technologies</li>
+                        <li>Automation Tools</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h4>Team Website Development</h4>
+                <p>
+                    Collaborated with teammates to build a full-stack web application using HTML, CSS, 
+                    JavaScript, Node.js, and MongoDB. Focused on creating a responsive user interface 
+                    and implementing database functionality. Gained valuable experience in version 
+                    control, team collaboration, and agile development practices.
+                </p>
+            </div>
+            
+            <div class="project">
+                <h4>Personal Portfolio Website</h4>
+                <p>
+                    Designed and developed this portfolio website to showcase my skills and projects. 
+                    Built with clean, semantic HTML and CSS, featuring responsive design and smooth 
+                    interactions. Deployed using GitHub Pages with proper version control workflow.
+                </p>
+            </div>
+            
+            <div class="project">
+                <h4>DevOps Learning Journey</h4>
+                <p>
+                    Currently exploring DevOps tools and practices including Apache Tomcat server 
+                    configuration, deployment automation, and CI/CD concepts. Building hands-on 
+                    experience with server management and application deployment workflows.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Get in touch</h2>
+            <p>
+                <a href="mailto:tranhoangphuc0401@gmail.com" class="contact-link">
+                    tranhoangphuc0401@gmail.com
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/PhucTran41" target="_blank" class="contact-link">
+                    GitHub
+                </a>
+            </p>
+            <p>Phone: +84 908 588 588</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Tran Phan Hoang Phuc</p>
+        </footer>
+    </div>
+
+    <script>
+        // Show initial about section
+        document.getElementById('about').classList.add('active');
+        
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
